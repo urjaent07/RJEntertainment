@@ -1,210 +1,227 @@
-<!DOCTYPE html>
-<html>
+<!-- Understanding the HTML Elements as Boxes
+     Will make super easy for you to build complex Layouts as a beginner
+    
+    - Follow along the Video
+    - Complete This Project
+    - Build Some Projects on your Own
 
-<head>
-  <meta charset="utf-8">
-  <title>RJ-Entmt.</title>
-  <link rel="icon" href="./images/flower.png">
-  <!-- Font awesome -->
-  <script src="https://kit.fontawesome.com/f39085bdbf.js" crossorigin="anonymous"></script>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <!-- JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <!-- Google font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@800&family=Hahmlet:wght@700&family=Merriweather:ital@1&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+    :) Happy Coding !!!
+    -->
 
-<body>
-
-  <section class="colored-section" id="title">
-    <div class="container-fluid">
-
-      <!-- Nav Bar -->
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#"><img src="./images/ent-logo.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#footer">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="form.html">Security Cam Installation</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#pricing">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#cta">Download</a>
-            </li>
-          </ul>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RJ-Entmt.</title>
+        <link rel="icon" href="./images/flower.png">
+        
+        <!--========= Custom Css ======== -->
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <!-- ==== Header Section === -->
+       <header class="header">
+       <div class="container">
+        <nav class="navbar">
+            <div class="brand">
+                <img src="./images/logo-ent.png" alt="logoImage">
+            </div>
+            <ul class="navlinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="./form.html">Security Cam Installation</a></li>
+                <li><a href="#"><img src="./images/cart.png" alt=""></a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <div class="header-info">
+                <div class="line"></div>
+                <h3>Best Quality Product </h3>
+                <h1>The best company in town which provides you the best Quality Products RJEntertainment.</h1>
+                <p>RJEntertainment is an IT Company that provides you with the best, unique & Competitive Products. Starting from security systems for you your family and your work place to internet Devices with high speed internet.</p>
+                <button class="ctn">Get Started &#8594;</button>
+            </div>
+            <div class="header-img">
+                <img src="./images/main.png" alt="">
+            </div>
         </div>
-      </nav>
-
-      <!-- Title -->
-
-      <div class="row">
-        <div class="col-lg-6">
-          <h1 class="big-heading">MAG 544w3 </h1>
-          <p class="describe-product">High-performance 4K set-top boxes<br><br>
-            powered by the ARM Cortex-A35 CPU<br><br>
-            set-top boxes powered by Linux OS.<br><br>
-            The Amlogic S905Y4 chip and quad-core ARM Cortex-A35 CPU.  </p>
-          <button class="btn btn-dark btn-lg download-button" type="button"><i class="fa-brands fa-apple"></i>
-            Get a quote</button>
+       </div>
+       </header>
+    
+        <!-- ==== Category  Section ==== -->
+        <section id="categories" class="container">
+            <div class="cotegory">
+                <img src="./images/tvip-image.jpeg" alt="">
+                <div class="category-content">
+                    <p>Amlogic chipset, 8 GHz <br> Memory: RAM 2 Gb, Flash 8 Gb</p>
+                    <h3>TVIP S-Box V.706</h3>
+                </div>
+            </div>
+            <div class="cotegory">
+                <div class="category-content">
+                    <p>Powerful Amlogic chipset <br> 4K HDR and HEVC</p>
+                    <h3>MAG544w3</h3>
+                </div>
+                <img src="./images/product1.jpg" alt="">
+                
+            </div>
+            <div class="cotegory">
+                <img src="./images/router2.jpeg" alt="">
+                <div class="category-content">
+                    <p>5 GHz with 160 MHz channel support <br>WPA3 - new level of cyber security</p>
+                    <h3>AX3000 Router</h3>
+                </div>
+            </div>
+        </section>
+    
+        <!-- ===== Featured Products ======= -->
+       
+        <section id="featured-products" class="container">
+            <div class="section-info">
+                <h1>Featured Products</h1>
+                <div class="line"></div>
+    
+            </div>
+            <div class="products">
+                <div class="product">
+                    <img src="./images/headphone-1.png" alt="">
+                    <div class="product-info">
+                        <p>Beats On-Ear Sound Isolating</p>
+                        <h3>Bluetooth Headphones Black </h3>
+                        <p>&#9733; &#9733; &#9733; &#9734; &#9734;</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./images/phone-3.png" alt="">
+                    <div class="product-info">
+                        <p>Sangoma s500 SIP Phone </p>
+                        <h3> SIP Phone </h3>
+                        <p>&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./images/headphone-2.png" alt="">
+                    <div class="product-info">
+                        <p>Beats On-Ear Sound Isolating</p>
+                        <h3>Bluetooth Headphones</h3>
+                        <p>&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./images/Linksys.jpg" alt="">
+                    <div class="product-info">
+                        <p>Home WiFi Mesh System Dual-Band </p>
+                        <h3>Linksys Atlas Router</h3>
+                        <p>&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="featured-products" class="container">
+            <div class="products">
+                <div class="product">
+                    <img src="./images/remote.png" alt="">
+                    <div class="product-info">
+                        <p>MECOOL Voice Control Remote (V03)</p>
+                        <h3>Voice Control Remote</h3>
+                        <p>&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./images/TVstick.png" alt="">
+                    <div class="product-info">
+                        <p>Amlogic S905Y4 processor  </p>
+                        <h3> MECOOL KD3 Tv Stick</h3>
+                        <p>&#9733; &#9733; &#9733; &#9734; &#9734;</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./images/remote.png" alt="">
+                    <div class="product-info">
+                        <p>MECOOL Voice Control Remote for MECOOL KM2 </p>
+                        <h3>Voice Control Remote</h3>
+                        <p>&#9733; &#9733; &#9733; &#9734; &#9734;</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./images/TVstick.png" alt="">
+                    <div class="product-info">
+                        <p>Amlogic S905Y4 processor  </p>
+                        <h3> MECOOL KD3 Tv Stick</h3>
+                        <p>&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="featured-products" class="container">
+            <div class="products">
+                <div class="product">
+                    <img src="./images/ADAPTER.jpg" alt="">
+                    <div class="product-info">
+                        <p>Best Quality ADAPTER</p>
+                        <h3>FORMULER ADAPTER </h3>
+                        <p>&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./images/BuzzTv-2.jpg" alt="">
+                    <div class="product-info">
+                        <p>New S905X4 quad core processor  </p>
+                        <h3> BuzzTv X5 64 GB </h3>
+                        <p>&#9733; &#9733; &#9733; &#9734; &#9734;</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./images/BuzzTv-E2-01.jpg" alt="">
+                    <div class="product-info">
+                        <p>Smart LED Light technology </p>
+                        <h3>BuzzTv XRS 4000</h3>
+                        <p>&#9733; &#9733; &#9733; &#9734; &#9734;</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="./images/remote-black.jpg" alt="">
+                    <div class="product-info">
+                        <p>MECOOL Voice Control Remote (V03)</p>
+                        <h3>Voice Control Remote</h3>
+                        <p>&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!--============  Offer ==============-->
+    <section id="offer">
+        <div class="container">
+            <img src="./images/offer.png alt="">
+            <div class="offer-content">
+                <h1>Hurry Up! <br> Deal of the Day </h1>
+                <p>RJEntertainment official online store sells all types of Linux and android boxes along with built in apps to provide you with multimedia entertainment. We have all brands available such as informir, TVIP, Formuler, BuzzTv etc</p>
+                <button class="ctn">Shop Now &#8594;</button>
+            </div>
         </div>
-        <div class="position col-lg-6">
-          <img class="title-image" src="images/MAG544.png" alt="iphone-mockup">
+    </section>
+    
+        <!--============  Featured Companies ==============-->
+      
+    
+        <!-- ============ Footer =============== -->
+    
+    <footer id="footer" class="white-section">
+        <div class="container-fluid">
+          <p>© Copyright Rj-Entertainment</p>
+          <br>
+        <div>
+                <p><span>Disclaimer</span> - RJ Entertainment Inc do not sell or promote any copyright Infringement content in any of the boxes. There are no services embedded in these boxes. No subscription. We won't be responsible if any external services don't work on these boxes. These are purely Android & Linux boxes with built-in Apps to provide Multimedia entertainment. If you require any more information or have any questions about our site's disclaimer, please feel free to contact us by email at <a href="mailto:admin@rjentertainment.live">admin@rjentertainment.live</a></p>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <h1 class="big-heading">TVIP S-Box V.706</h1>
-          <p class="describe-product">Chipset: Amlogic S905W2 quad core 1,8 GHz<br><br>
-            Video Resolution: 3840x2160 (HDR)<br><br>
-            3D Graphics: OpenGL ES 3.2 (ARM G31 MP2 GPU)<br><br>
-            Memory: RAM 2 Gb, Flash 8 Gb <br><br>
-            Interfaces: HDMI, AV, Ethernet, 2xUSB </p>
-          <button class="btn btn-dark btn-lg download-button" type="button"><i class="fa-brands fa-apple"></i>
-            Get a quote</button>
         </div>
-        <div class="position col-lg-6">
-          <img class="title-image" src="images/TVIP.png" alt="iphone-mockup">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <h1 class="big-heading">TP-Link AX3000 Router</h1>
-          <p class="describe-product">Drastically improved speeds enable streaming <br><br>
-            5 GHz with 160 MHz channel support <br><br>
-            fast downloading, and gaming - all at the <br></br>
-            same time.<br><br>
-            WPA3 - new level of cyber security<br><br>
-            doubles the bandwidth, enabling 8K video without lag.</p>
-          <button class="btn btn-dark btn-lg download-button" type="button"><i class="fa-brands fa-apple"></i>
-            Get a quote</button>
-        </div>
-        <div class="position col-lg-6">
-          <img class="title-image" src="./images/AX3000.png" alt="iphone-mockup" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <h1 class="big-heading">Linksys Atlas Router</h1>
-          <p class="describe-product">Home WiFi Mesh System <br><br>
-            Dual-Band, 4,000 Sq. ft Coverage<br><br>
-            WiFi 6 means higher speeds for <br> streaming and gaming<br><br>
-            Easy set-up control through Linksys<br><br>
-            50+ Devices, Speeds up to (AX3000) 3.0Gbps - MX2000 2-Pack </p>
-          <button class="btn btn-dark btn-lg download-button" type="button"><i class="fa-brands fa-apple"></i>
-            Get a quote</button>
-        </div>
-        <div class="position col-lg-6">
-          <img class="title-image" src="images/Linksys.jpg" alt="iphone-mockup">
-        </div>
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- Features -->
-
-  <section class="white-section" id="features">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="feature-box col-lg-4">
-          <i class="icon fa-solid fa-circle-check fa-4x"></i>
-          <h3 class="feature-title">Easy to use.</h3>
-          <p>So easy to use, even your kid could do it.</p>
-        </div>
-        <div class="feature-box col-lg-4">
-          <i class="icon fa-solid fa-bullseye fa-4x"></i>
-          <h3 class="feature-title">Elite Clientele</h3>
-          <p>We have all the products, the greatest products.</p>
-        </div>
-        <div class="feature-box col-lg-4">
-          <i class="icon fa-solid fa-heart fa-4x"></i>
-          <h3 class="feature-title">Guaranteed to work.</h3>
-          <p>Find full entertainment or your money back.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-
-  <section class="colored-section" id="testimonials">
-    <div id="testimonial-carousel" class="carousel slide" data-bs-ride="false">
-      <div class="carousel-inner">
-        <div class="carousel-item active container-fluid" data-bs-interval="1000">
-          <h2 class="testimonial-text">MAG524 and MAG524w3 are Linux devices powered by the Amlogic S905X2 chipset. With MAG524/524w3 and Infomir’s priority technical support, operators can ensure that users have a seamless experience.<br><br>
-          <img class="testimonial-image" src="images/MAG420.png" alt="dog-profile">
-          <em>MAG524 – 4K</em> </h2>
-        </div>
-        <div class="carousel-item container-fluid" data-bs-interval="2000">
-          <h2 class="testimonial-text">MAG522 and MAG522w3 Linux set-top boxes, powered by an Amlogic S905X2 chipset, are equipped with a powerful ARM Cortex-A53 CPU with the best GPU. <br><br>
-          <img class="testimonial-image" src="images/mag-22.png" alt="lady-profile">
-          <em>MAG522 – 4K</em> </h2>
-        </div>
-        <div class="carousel-item container-fluid" data-bs-interval="2000">
-          <h2 class="testimonial-text">Linksys WRT1900AC AC1900 Dual-Band Wi-Fi Router. <br><br>
-          <img class="testimonial-image" src="images/router2.jpeg" alt="lady-profile">
-          <em>WRT1900AC </em> </h2>
-        </div>
-        <div class="carousel-item container-fluid" data-bs-interval="2000">
-          <h2 class="testimonial-text">Linksys EA9200 AC3200 Tri-Band Wi-Fi Router. <br><br>
-          <img class="testimonial-image" src="images/router7.jpeg" alt="lady-profile">
-          <em>EA9200 </em> </h2>
-        </div>
-
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-
-      </button>
-    </div>
-  </section>
-
-  <!-- Footer -->
-
-  <footer id="footer" class="white-section">
-    <div class="container-fluid">
-      <i class="social-icon fa-brands fa-facebook"></i>
-      <i class="social-icon fa-brands fa-twitter"></i>
-      <i class="social-icon fa-brands fa-instagram-square"></i>
-      <i class="social-icon fa-solid fa-envelope"></i>
-      <p>© Copyright Rj-Entertainment</p>
-    <div>
-            <p><span>Disclaimer</span> - RJ Entertainment Inc do not sell or promote any copyright Infringement content in any of the boxes. There are no services embedded in these boxes. No subscription. We won't be responsible if any external services don't work on these boxes. These are purely Android & Linux boxes with built-in Apps to provide Multimedia entertainment. If you require any more information or have any questions about our site's disclaimer, please feel free to contact us by email at <a href="mailto:admin@rjentertainment.live">admin@rjentertainment.live</a></p>
-    </div>
-    </div>
-  </footer>
-  
-</body>
-</html>
+      </footer>
+       
+        <!-- ============== Javascript for Mobile Menu =========== -->
+        <script>
+           
+        </script>
+    </body>
+    </html>
